@@ -32,6 +32,10 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Credentials', true);
     next();
 })
+app.get('/', (req, res) => {
+    res.send("welcome to backend of artwork")
+})
+
 
 app.get('/getdata', async (req, res) => {
     const page = req.query
@@ -43,7 +47,6 @@ app.get('/getitems', async (req, res) => {
     const data = await artwork.find().skip((page - 1) * 6).limit(items).exec()
     res.json({ success: true, data: data })
 })
-
 
 app.listen(process.env.PORT, () => {
     console.log("app listening on port ", process.env.PORT)
