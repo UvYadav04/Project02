@@ -7,7 +7,6 @@ import 'primereact/resources/themes/saga-blue/theme.css';  // or any other theme
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import './Home.css';
-import { Button } from 'primereact/button';
 import { FaAngleDown } from "react-icons/fa6";
 
 // Define types for the data
