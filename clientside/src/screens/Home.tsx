@@ -109,15 +109,15 @@ const Home: React.FC = () => {
                 dataKey="title"
                 tableStyle={{ minWidth: '50rem' }}
                 className='w-[80%] mx-auto px-4 py-4 mt-10 bg-slate-500'
-                rowClassName='bg-slate-300'
+
             >
-                <Column selectionMode="multiple" headerStyle={{ width: '3rem' }}></Column>
-                <Column field="title" header={headerTemplate()} />
-                <Column field="place_of_origin" header="Origin" />
-                <Column field="artist_display" header="Artist Display" />
-                <Column field="inscriptions" header="Inscriptions" />
-                <Column field="date_start" header="Start" />
-                <Column field="date_end" header="End" />
+                <Column className='bg-slate-300' selectionMode="multiple" headerStyle={{ width: '3rem' }}></Column>
+                <Column className='bg-slate-300' field="title" header={headerTemplate()} />
+                <Column className='bg-slate-300' field="place_of_origin" header="Origin" />
+                <Column className='bg-slate-300' field="artist_display" header="Artist Display" />
+                <Column className='bg-slate-300' field="inscriptions" header="Inscriptions" />
+                <Column className='bg-slate-300' field="date_start" header="Start" />
+                <Column className='bg-slate-300' field="date_end" header="End" />
             </DataTable>
 
             <Paginator
